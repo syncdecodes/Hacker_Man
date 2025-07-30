@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker_Man</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+        pre {
+            white-space: pre-wrap;
+            /* Wrap long lines */
+            word-wrap: break-word;
+            /* Break long words if needed */
+            overflow-wrap: break-word;
+            /* Support newer browsers */
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+    <script>
+        console.log("HackerMan using javascript")
+
+
+        let a = prompt("Please enter your name").toUpperCase()
+        let num = prompt("Enter your Mobile Number")
+        while (isNaN(num) || num.trim() === "") {
+            num = prompt("Please enter a valid Mobile Number (digits only)")
+        }
+
+
+        setTimeout(() => {
+            let main = document.createElement("pre")
+            main.innerHTML = ("HI " + a + ". I hope you are Good! your Mobile Number is: " + num)
+            main.style.color = "grey"
+            main.style.fontSize = "2rem"
+            main.style.fontFamily = "JetBrains Mono"
+            document.body.appendChild(main)
+        }, 1000)
+
+        setTimeout(() => {
+            let pre1 = document.createElement("pre")
+            pre1.innerHTML = "Initializing hack programme...."
+            pre1.style.fontSize = "1.1rem"
+            document.body.appendChild(pre1)
+        }, 2000)
+
+        setTimeout(() => {
+
+
+            let pre2 = document.createElement("pre")
+            pre2.innerHTML = ("Fetching " + a + "'s Data.....")
+            pre2.style.fontSize = "1.1rem"
+            document.body.appendChild(pre2)
+        }, 4000)
+
+        setTimeout(() => {
+            let pre3 = document.createElement("pre")
+            pre3.innerHTML = ("Username (" + a + "'s) account fetched successfully....")
+            pre3.style.fontSize = "1.1rem"
+            document.body.appendChild(pre3)
+        }, 6000)
+
+        setTimeout(() => {
+            let pre4 = document.createElement("pre")
+            pre4.innerHTML = ("Accessing passwords - (Google, Facebook, INSTAGRAM).... this will take a moment")
+            pre4.style.fontSize = "1.1rem"
+            document.body.appendChild(pre4)
+        }, 8000)
+
+        setTimeout(() => {
+            let pre5 = document.createElement("pre")
+            pre5.style.fontSize = "1.1rem"
+            pre5.innerHTML = (a + "'s account data has been fetched successfully..")
+            document.body.appendChild(pre5)
+        }, 10000)
+
+        setTimeout(() => {
+            let pre6 = document.createElement("pre")
+            pre6.style.color = "black"
+            pre6.style.fontSize = "1.1rem"
+            pre6.innerHTML = (a + "'s account has been hacked successfully now we have access to your - Instagram, Facebook and Google Password")
+            document.body.appendChild(pre6)
+
+        }, 12000)
+
+        setTimeout(() => {
+            let pre7 = document.createElement("pre")
+            pre7.style.color = "red"
+            pre7.innerHTML = ("YOUR ACCOUNT HAS BEEN HACKED..! (CONFIRMATION..) THANKYOU " + a)
+
+            document.body.appendChild(pre7)
+        }, 14000)
+    </script>
+</body>
+
+</html>
